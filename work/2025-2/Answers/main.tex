@@ -1,0 +1,62 @@
+\documentclass[a4paper,11pt]{jsarticle}
+% 数式
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{bm}
+% 画像
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{pdfpages}
+\usepackage{tabularx}
+\usepackage{pifont}
+\usepackage{array}
+\usepackage{multicol}
+\usepackage{float}
+
+% ハイパーリンク
+\usepackage[%
+dvipdfmx,% 欧文ではコメントアウトする
+setpagesize=false,%
+bookmarks=true,%
+bookmarksdepth=tocdepth,%
+bookmarksnumbered=true,%
+colorlinks=false,%
+pdftitle={},%
+pdfsubject={},%
+pdfauthor={},%
+pdfkeywords={}%
+]{hyperref}
+\usepackage{pxjahyper}
+
+\usepackage{geometry}
+\geometry{a4paper,top=10mm,bottom=20mm,left=15mm,right=25mm}
+
+\begin{document}
+
+\tableofcontents
+\bigskip
+\noindent\textbf{更新履歴$\circlearrowleft$} {\scriptsize(掲載完了予定：5月中旬)}
+\begin{itemize}
+    \item 2026/04/17 公開
+\end{itemize}
+\newpage
+
+\title{}
+\author{}
+\date{}
+\maketitle
+
+\input{contents/Eng_A.tex}
+\newpage
+\input{contents/EngCom_A.tex}
+\newpage
+\input{contents/Chem_A.tex}
+\newpage
+\input{contents/Phis_A.tex}
+\newpage
+\input{contents/Inf_A.tex}
+\newpage
+\input{contents/MicroCon_A.tex}
+\newpage
+\input{contents/Hist_A.tex}
+
+\end{document}
+

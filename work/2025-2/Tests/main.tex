@@ -1,0 +1,85 @@
+\documentclass[a4paper,11pt,dvipdfmx]{jsarticle}
+% 数式
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{bm}
+% 画像
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[dvipdfmx]{color}
+\usepackage{tabularx}
+\usepackage{pifont}
+\usepackage{array}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{colortbl,array,xcolor}
+\usepackage{fancybox}
+\usepackage{ascmac}
+\usepackage{wrapstuff}
+
+\usepackage{geometry}
+\geometry{a4paper,top=10mm,bottom=20mm,left=15mm,right=25mm}
+
+% ハイパーリンク
+\usepackage[%
+dvipdfmx,% 欧文ではコメントアウトする
+setpagesize=false,%
+bookmarks=true,%
+bookmarksdepth=tocdepth,%
+bookmarksnumbered=true,%
+colorlinks=false,%
+pdftitle={},%
+pdfsubject={},%
+pdfauthor={},%
+pdfkeywords={}%
+]{hyperref}
+\usepackage{pxjahyper}
+
+% 2段組
+\makeatletter
+\def\TableCaption#1{\def\@captype{table}\caption{#1}}
+\makeatother
+
+\begin{document}
+\newcolumntype{A}{>{\columncolor[gray]{0.8}}c}
+
+\tableofcontents
+\bigskip
+\noindent\textbf{25年度2I前期中間過去問題集へようこそ！以下は案内です:)}
+\begin{itemize}
+    \item 目次の各項目をクリック又はタップすると該当の問題にジャンプします．
+    \item ()内の名前は担当教師の名前であって，必ずしも問題制作者であるとは限りません．\\また，$\ast$は非常勤講師を表します．
+    \item 社会2の問題用紙は回収されているため掲載していません．(一応解答だけ掲載するかも)
+    \item 生物の問題用紙兼解答用紙は回収されているため掲載していません．
+    \item 国語2，プログラミング1の前期中間試験は実施されていません．
+    \item 解答は別冊を参照してください．
+    \item 微分積分1，ベクトル・行列の問題及び解答は，別途「微積・ベクトル・行列」フォルダを参照してください．
+\end{itemize}
+
+\bigskip
+\noindent\textbf{更新履歴$\circlearrowleft$} {\scriptsize(掲載完了予定：5月中旬)}
+\begin{itemize}
+    \item 2026/04/17 公開，マイクロコンピュータの問題を追加
+    \item 2026/04/23 情報2の問題を追加
+    \item 2026/04/28 英語表現2，英語3の問題を追加
+\end{itemize}
+\newpage
+
+\title{}
+\author{}
+\date{}
+\maketitle
+
+\input{contents/Eng.tex}
+\newpage
+\input{contents/EngCom.tex}
+\newpage
+\input{contents/Chem.tex}
+\newpage
+\input{contents/Phis.tex}
+\newpage
+\input{contents/Inf.tex}
+\newpage
+\input{contents/MicroCon.tex}
+
+
+\end{document}
+
